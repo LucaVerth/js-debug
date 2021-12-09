@@ -1,7 +1,7 @@
 <template>
     <div id="app">
-        <Header :genres="genresList" :authors="authorsList" @changedGenre="startGenreSearch" @chaangedAuthor="startAuthorSearch" />
-
+        <Header :genres="genresList" :authors="authorsList" @changedGenre="startGenreSearch" @changedAuthor="startAuthorSearch" />
+        <!-- @chaangedAuthor è l'errore  - soluzione è changedAuthor -->
         <Main :selectedGenre="genreToSearch" :selectedAuthor="authorToSearch" @genresAndAuthorsReady="getGenresAndAuthorsList" />
     </div>
 </template>
@@ -26,7 +26,8 @@ export default {
     },
     methods: {
         getGenresAndAuthorsList(allGenresAndAuthors) {
-            allGenresAndAuthors = {};
+            //allGenresAndAuthors = {};
+            // non mi serve il seguente oggetto
             this.genresList = allGenresAndAuthors.genres;
             this.authorsList = allGenresAndAuthors.authors;
         },

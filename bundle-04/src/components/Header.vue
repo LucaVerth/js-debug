@@ -6,7 +6,7 @@
         <div>
             <select
                 v-model="genreFilter"
-                @change="$emit('changedGenere', genreFilter)"
+                @change="$emit('changedGenre', genreFilter)"
                 class="form-select mt-3"
             >
                 <option value="">Seleziona un genere</option>
@@ -31,7 +31,8 @@
                     :key="index"
                     :value="author"
                 >
-                    {{ genre }}
+                    {{ author }}
+                    <!-- genre al posto di author è l'errore -->
                 </option>
             </select>
 
@@ -41,7 +42,8 @@
 
 <script>
 export default {
-    name: "Haeder",
+    name: "Header",
+    // Header è scritto male
     props: {
         genres: Array,
         authors: Array,
