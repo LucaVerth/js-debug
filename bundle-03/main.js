@@ -85,7 +85,7 @@ console.log(dieselCars);
 console.log('Tutte le altre auto');
 console.log(otherCars);
 
-// 1- il codice in base ad una array di oggetti, dovrebbe stabilire il tipo di alimentazione e separarli nei rispettivi array
+// 1- il codice in base ad un array di oggetti (cars), dovrebbe stabilire il tipo di alimentazione e separarli nei rispettivi array
 // 2- questo codice presenta un errore di sintassi. ( mancanza di virgola all'interno dell'array di oggetti, errore di sintassi arrow function)
 // 3- questo codice presenta un errore di logica. ( vedere correzione, mancanza di .toLowerCase per leggere string con lettere maiuscole)
 // soluzione:
