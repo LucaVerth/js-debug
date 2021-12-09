@@ -33,7 +33,8 @@ export default {
         },
         startGenreSearch(genreToSearch) {
             console.log(genreToSearch);
-            genreToSearch = "";
+            //genreToSearch = "";
+            // questa stringa vuota non serve sovrascrive quella in arrivo dall'emit di header
             this.genreToSearch = genreToSearch;
         },
         startAuthorSearch(authorToSearch) {
